@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Method — Korean Music Charts</title><meta name="description" content="Who ranked Korean songs, with what, and how — from the first gramophone recordings of 1906 to digital charts">
+<script>(function(){var q=new URLSearchParams(location.search).get("theme");if(q==="light"||q==="dark"){localStorage.setItem("kmc-theme",q)}else if(q==="auto"){localStorage.removeItem("kmc-theme")}var v=localStorage.getItem("kmc-theme");if(v)document.documentElement.setAttribute("data-theme",v)})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#f8f7f4;--bg2:#efede8;--card:#ffffff;--line:#dedbd3;--line2:#ebe8e1;--fg:#1d1f24;--fg2:#5a5e68;--fg3:#8a8e98;
+--accent:#3f6a9e;--accent2:#b5833f;--k1:#3a6fb0;--k2:#b5833f;--k3:#7f63ad;--k4:#3f8f62;--grid:#e6e3dc;--gap:#efede8;
+--shadow:0 1px 2px rgba(30,32,40,.05),0 6px 18px rgba(30,32,40,.05);
+--display:"Noto Serif KR","Source Serif 4",Georgia,serif;--body:"Noto Sans KR",-apple-system,"Segoe UI","Apple SD Gothic Neo",Roboto,sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1b1c1f;--bg2:#222326;--card:#232428;--line:#34363c;--line2:#2b2d32;--fg:#ebe9e4;--fg2:#b3b1aa;--fg3:#80827f;--accent:#7ea4d6;--accent2:#d1a35f;--k1:#5a8ccf;--k2:#b5863a;--k3:#9078c4;--k4:#3fa06e;--grid:#2e3035;--gap:#26272b;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.25)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1b1c1f;--bg2:#222326;--card:#232428;--line:#34363c;--line2:#2b2d32;--fg:#ebe9e4;--fg2:#b3b1aa;--fg3:#80827f;--accent:#7ea4d6;--accent2:#d1a35f;--k1:#5a8ccf;--k2:#b5863a;--k3:#9078c4;--k4:#3fa06e;--grid:#2e3035;--gap:#26272b;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.25)}
+*{box-sizing:border-box}html,body{max-width:100%;overflow-x:hidden}
+body{margin:0;font:16px/1.7 var(--body);background:var(--bg);color:var(--fg);overflow-wrap:anywhere;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:.55rem 1.1rem;display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+header .brand{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--fg)}
+header nav{display:flex;gap:.9rem;flex-wrap:wrap}header nav a{color:var(--fg2);font-size:.92rem;border-bottom:2px solid transparent}header nav a:hover{text-decoration:none;color:var(--fg)}header nav a.on{color:var(--fg);border-bottom-color:var(--accent2)}
+header .right{margin-left:auto;display:flex;gap:.6rem;align-items:center}
+header .lang{font-size:.88rem;color:var(--fg2);border:1px solid var(--line);border-radius:999px;padding:.15rem .7rem}header .lang:hover{text-decoration:none;color:var(--fg)}
+.theme{border:1px solid var(--line);background:transparent;color:var(--fg2);border-radius:999px;width:30px;height:30px;cursor:pointer;font-size:.9rem;line-height:1;padding:0}
+main{max-width:980px;margin:0 auto;padding:1.6rem 1.1rem 4rem;min-width:0}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.25;margin:.3rem 0 .6rem;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:1.25rem;line-height:1.3;margin:2.2rem 0 .7rem;padding-bottom:.35rem;border-bottom:1px solid var(--line);text-wrap:balance}
+.eyebrow{color:var(--fg3);font-size:.84rem;letter-spacing:.03em}
+.hero{padding:.6rem 0 1.2rem;border-bottom:1px solid var(--line);margin-bottom:1.2rem}.hero h1{font-size:clamp(1.9rem,4vw,2.6rem)}.lead{color:var(--fg2);font-size:1.08rem;max-width:68ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.8rem;margin:.9rem 0 1.4rem}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem .9rem;box-shadow:var(--shadow);color:var(--fg)}a.card:hover{text-decoration:none;border-color:var(--fg3)}
+.card b{display:block;margin-bottom:.15rem;color:var(--accent)}.card .yr{font-size:.8rem;color:var(--fg3)}.card small{display:block;color:var(--fg2);font-size:.88rem;line-height:1.5;margin-top:.3rem}
+:lang(ko) p,:lang(ko) li,:lang(ko) .lead,:lang(ko) blockquote,:lang(ko) figcaption,:lang(ko) .card small{word-break:keep-all;overflow-wrap:anywhere}
+.prose p,.prose ul,.prose blockquote{max-width:72ch}.prose p{margin:.8rem 0}.prose ul{padding-left:1.2rem}.prose li{margin:.3rem 0}
+blockquote{border-left:4px solid var(--accent);background:var(--bg2);border-radius:0 10px 10px 0;padding:.75rem 1.1rem;margin:.8rem 0 1.4rem}blockquote p{margin:0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;margin:.6rem 0}th,td{border-bottom:1px solid var(--line2);padding:.42rem .6rem;text-align:left;vertical-align:top}
+thead th{color:var(--fg2);font-weight:600;font-size:.84rem;border-bottom:1px solid var(--line)}tbody tr:nth-child(even){background:color-mix(in srgb,var(--bg2) 55%,transparent)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:0 .3rem;margin:.6rem 0 1rem}.wrap table{margin:0}.wrap th,.wrap td{overflow-wrap:normal;word-break:normal}:lang(ko) .wrap td{word-break:keep-all}
+figure{margin:1.2rem 0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1rem .8rem;box-shadow:var(--shadow)}
+figure h3{margin:0 0 .3rem;font-size:1rem}figcaption{font-size:.86rem;color:var(--fg2);margin-top:.5rem;line-height:1.5}
+.chart{overflow-x:auto}svg{max-width:100%;height:auto;display:block}svg text{font-family:var(--body);fill:var(--fg2);font-size:13px}svg .grid{stroke:var(--grid)}svg .ax{stroke:var(--line)}
+svg .hit:hover{stroke:var(--fg);stroke-width:1.5}svg .cell:hover{stroke:var(--fg);stroke-width:1.5}
+.legend{display:flex;gap:1rem;font-size:.85rem;color:var(--fg2);flex-wrap:wrap;margin:.2rem 0 .5rem}.legend span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:.35rem;vertical-align:-1px;background:var(--c)}
+.legend span.h::before{background:repeating-linear-gradient(45deg,var(--fg3) 0 1.5px,transparent 1.5px 4px);border:1px solid var(--fg3)}
+details{margin-top:.6rem}summary{cursor:pointer;color:var(--fg2);font-size:.88rem}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:2.4rem;padding-top:1rem;font-size:.92rem}.pn a[rel=next]{margin-left:auto;text-align:right}.pn small{display:block;color:var(--fg3)}
+.files a{display:inline-block;font-size:.85rem;background:var(--bg2);border:1px solid var(--line2);border-radius:6px;padding:.15rem .55rem;margin:.2rem .3rem .2rem 0;color:var(--fg2)}
+footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;padding:1.2rem;text-align:center}
+@media(max-width:640px){.chart svg{min-width:640px}.chart svg text{font-size:13px}header{gap:.6rem}}
+</style></head><body>
+<header><a class="brand" href="../en/index.html">Korean Music Charts</a><nav><a href="../en/index.html">Home</a><a href="../en/ch0.html">Chapters</a><a href="../en/data.html">Data</a><a href="../en/method.html" class="on">Method</a></nav>
+<div class="right"><button id="theme" class="theme" type="button" aria-label="Theme">◑</button><a class="lang" href="../ko/method.html">한국어</a></div></header>
+<main><h1>Method</h1><div class="prose"><h2>Source grades</h2>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>Grade</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary</td>
+<td>Original texts of the time; copies of association releases</td>
+<td><em>Samcheolli</em>, Oct 1935; Internet Archive copies of MIAK monthly tables</td>
+</tr>
+<tr>
+<td>Contemporary report</td>
+<td>Newspaper or magazine articles from the same period</td>
+<td>Dong-A Ilbo, 10 Feb 1981, on the launch of <em>Gayo Top 10</em></td>
+</tr>
+<tr>
+<td>Secondary</td>
+<td>Encyclopedias; articles written decades later</td>
+<td>Wikipedia lists</td>
+</tr>
+</tbody>
+</table></div>
+<p>Secondary sources are used for checking only, never cited as evidence. In the figures, spans confirmed only by secondary sources are hatched.</p>
+<h2>Checking the No. 1 lists</h2>
+<ul>
+<li><strong>MIAK monthly No. 1 Korean album (Aug 1998–Sep 2008).</strong> The No. 1 was copied from a copy of the table for all 122 months and checked against the Wikipedia list for the same month.</li>
+<li><strong>KBS <em>Gayo Top 10</em> weekly No. 1 (1981–1998).</strong> The 889-row Wikipedia list is the frame. The weeks to check were fixed before looking at the data: the first broadcast of each month, or the second if the first was skipped. Any year with a mismatch was to be checked in full. Newspapers of the time were read through public search results (opening lines) of the Dong-A Ilbo digital archive. So far 18 of the 203 sample weeks have been checked. The 889 rows of the list cover 888 broadcast dates (one tie on 25 Dec 1991).</li>
+<li>Each row is marked matched, mismatched, or undetermined. A row is undetermined when it cannot be settled which broadcast an article refers to. Undetermined rows are left out of the match-rate denominator.</li>
+</ul>
+<h2>Genre classes</h2>
+<p>Each No. 1 album's genre is recorded twice: the label printed on the table at the time, and a later class. A class is assigned only when the printed label maps directly to an entry in the genre dictionary (ballad, dance, rap/hip hop, R&amp;B/soul, rock/band, and so on). Months labeled only <em>gayo</em> (Korean pop) or <em>Local</em>, or given two genres, are left unclassified. No song gets two genres.</p>
+<h2>Titles and names</h2>
+<p>Korean pages use original Korean titles and names. English pages use the official English form where one exists; otherwise the Revised Romanization of Korean, followed by the Korean original in parentheses.</p>
+<h2>Rights and scope</h2>
+<ul>
+<li>Only facts such as titles, artists, ranks, dates, and sales are used. No lyrics, audio, album covers, broadcast images, or newspaper page images.</li>
+<li>The MIAK tables carry the line "This material may not be processed or edited without consulting the association." This site does not reproduce the ranking tables. For each month it gives only the No. 1 album and artist and that month's sales, with the address of the copy.</li>
+<li>No No. 1 list is built for Circle Chart until its terms of use are confirmed.</li>
+<li>No automated collection program was run against any site. Sources were opened and copied by hand.</li>
+<li>The site does not discuss allegations of chart manipulation against any singer or agency, and builds no measure comparing singers' popularity.</li>
+</ul>
+<h2>Not yet done</h2>
+<ul>
+<li>Checking the remaining 185 <em>Gayo Top 10</em> sample weeks and all of 1991, where undetermined rows cluster.</li>
+<li>The contents and running period of the 1972 DBS weekly top 10.</li>
+<li>Yearly gramophone release counts, pending the terms of use of the catalog data.</li>
+<li>Comparing broadcast-chart and sales No. 1s in the same month.</li>
+</ul></div></main>
+<footer>Korean Music Charts · Version 0.1.1 · built 2026-11-05 · <a href="https://github.com/BowonKwon/Korean-Music-Charts">GitHub</a> · Other sites <a href="https://bowonkwon.github.io/en/">bowonkwon.github.io</a></footer>
+<script>(function(){var k="kmc-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>

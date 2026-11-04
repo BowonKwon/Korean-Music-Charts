@@ -1,0 +1,11 @@
+chart_id,period_start,period_end,division,rank,artist_hanja,artist_ko,label_as_printed,votes,source_primary,source_primary_status,note
+samcheolli_1935_singer_vote,1935,1935-09,남가수,1,蔡奎燁,채규엽,콜넘비아 레코-드,1844,「삼천리」 제7권 제9호(1935. 10.) 「레코-드 歌手 人氣投票」(국사편찬위원회 한국사데이터베이스 ma_016_0510_0230),✅,"원문: 「今春」 투표 시작(월 미상), 「今 9월 말일까지」 1만 매 돌파 후 마감"
+samcheolli_1935_singer_vote,1935,1935-09,남가수,2,金龍煥,김용환,포리돌- 레코-드,1335,같음,✅,
+samcheolli_1935_singer_vote,1935,1935-09,남가수,3,高福壽,고복수,오-케- 레코-드,674,같음,✅,
+samcheolli_1935_singer_vote,1935,1935-09,남가수,4,姜弘植,강홍식,콜럼비아 레코-드,468,같음,✅,
+samcheolli_1935_singer_vote,1935,1935-09,남가수,5,崔南鏞,최남용,太 平 레코-드,333,같음,✅,
+samcheolli_1935_singer_vote,1935,1935-09,여가수,1,王壽福,왕수복,포리둘- 레코-드,1903,같음,✅,
+samcheolli_1935_singer_vote,1935,1935-09,여가수,2,鮮于一扇,선우일선,포리돌- 레코-드,1166,같음,✅,
+samcheolli_1935_singer_vote,1935,1935-09,여가수,3,李蘭影,이난영,오-케 레코-드,873,같음,✅,
+samcheolli_1935_singer_vote,1935,1935-09,여가수,4,全玉,전옥,포리돌- 레코-드,387,같음,✅,
+samcheolli_1935_singer_vote,1935,1935-09,여가수,5,金福姬,김복희,삑타- 레코-드,348,같음,✅,

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3장. 주간 순위 프로그램 (1981~1998) — 가요 차트 100년</title><meta name="description" content="누가, 무엇으로, 어떻게 노래의 순위를 매겨 왔나 — 1906년 유성기 녹음부터 디지털 차트까지">
+<script>(function(){var q=new URLSearchParams(location.search).get("theme");if(q==="light"||q==="dark"){localStorage.setItem("kmc-theme",q)}else if(q==="auto"){localStorage.removeItem("kmc-theme")}var v=localStorage.getItem("kmc-theme");if(v)document.documentElement.setAttribute("data-theme",v)})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#f8f7f4;--bg2:#efede8;--card:#ffffff;--line:#dedbd3;--line2:#ebe8e1;--fg:#1d1f24;--fg2:#5a5e68;--fg3:#8a8e98;
+--accent:#3f6a9e;--accent2:#b5833f;--k1:#3a6fb0;--k2:#b5833f;--k3:#7f63ad;--k4:#3f8f62;--grid:#e6e3dc;--gap:#efede8;
+--shadow:0 1px 2px rgba(30,32,40,.05),0 6px 18px rgba(30,32,40,.05);
+--display:"Noto Serif KR","Source Serif 4",Georgia,serif;--body:"Noto Sans KR",-apple-system,"Segoe UI","Apple SD Gothic Neo",Roboto,sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1b1c1f;--bg2:#222326;--card:#232428;--line:#34363c;--line2:#2b2d32;--fg:#ebe9e4;--fg2:#b3b1aa;--fg3:#80827f;--accent:#7ea4d6;--accent2:#d1a35f;--k1:#5a8ccf;--k2:#b5863a;--k3:#9078c4;--k4:#3fa06e;--grid:#2e3035;--gap:#26272b;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.25)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1b1c1f;--bg2:#222326;--card:#232428;--line:#34363c;--line2:#2b2d32;--fg:#ebe9e4;--fg2:#b3b1aa;--fg3:#80827f;--accent:#7ea4d6;--accent2:#d1a35f;--k1:#5a8ccf;--k2:#b5863a;--k3:#9078c4;--k4:#3fa06e;--grid:#2e3035;--gap:#26272b;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.25)}
+*{box-sizing:border-box}html,body{max-width:100%;overflow-x:hidden}
+body{margin:0;font:16px/1.7 var(--body);background:var(--bg);color:var(--fg);overflow-wrap:anywhere;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:.55rem 1.1rem;display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+header .brand{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--fg)}
+header nav{display:flex;gap:.9rem;flex-wrap:wrap}header nav a{color:var(--fg2);font-size:.92rem;border-bottom:2px solid transparent}header nav a:hover{text-decoration:none;color:var(--fg)}header nav a.on{color:var(--fg);border-bottom-color:var(--accent2)}
+header .right{margin-left:auto;display:flex;gap:.6rem;align-items:center}
+header .lang{font-size:.88rem;color:var(--fg2);border:1px solid var(--line);border-radius:999px;padding:.15rem .7rem}header .lang:hover{text-decoration:none;color:var(--fg)}
+.theme{border:1px solid var(--line);background:transparent;color:var(--fg2);border-radius:999px;width:30px;height:30px;cursor:pointer;font-size:.9rem;line-height:1;padding:0}
+main{max-width:980px;margin:0 auto;padding:1.6rem 1.1rem 4rem;min-width:0}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.25;margin:.3rem 0 .6rem;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:1.25rem;line-height:1.3;margin:2.2rem 0 .7rem;padding-bottom:.35rem;border-bottom:1px solid var(--line);text-wrap:balance}
+.eyebrow{color:var(--fg3);font-size:.84rem;letter-spacing:.03em}
+.hero{padding:.6rem 0 1.2rem;border-bottom:1px solid var(--line);margin-bottom:1.2rem}.hero h1{font-size:clamp(1.9rem,4vw,2.6rem)}.lead{color:var(--fg2);font-size:1.08rem;max-width:68ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.8rem;margin:.9rem 0 1.4rem}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem .9rem;box-shadow:var(--shadow);color:var(--fg)}a.card:hover{text-decoration:none;border-color:var(--fg3)}
+.card b{display:block;margin-bottom:.15rem;color:var(--accent)}.card .yr{font-size:.8rem;color:var(--fg3)}.card small{display:block;color:var(--fg2);font-size:.88rem;line-height:1.5;margin-top:.3rem}
+:lang(ko) p,:lang(ko) li,:lang(ko) .lead,:lang(ko) blockquote,:lang(ko) figcaption,:lang(ko) .card small{word-break:keep-all;overflow-wrap:anywhere}
+.prose p,.prose ul,.prose blockquote{max-width:72ch}.prose p{margin:.8rem 0}.prose ul{padding-left:1.2rem}.prose li{margin:.3rem 0}
+blockquote{border-left:4px solid var(--accent);background:var(--bg2);border-radius:0 10px 10px 0;padding:.75rem 1.1rem;margin:.8rem 0 1.4rem}blockquote p{margin:0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;margin:.6rem 0}th,td{border-bottom:1px solid var(--line2);padding:.42rem .6rem;text-align:left;vertical-align:top}
+thead th{color:var(--fg2);font-weight:600;font-size:.84rem;border-bottom:1px solid var(--line)}tbody tr:nth-child(even){background:color-mix(in srgb,var(--bg2) 55%,transparent)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:0 .3rem;margin:.6rem 0 1rem}.wrap table{margin:0}.wrap th,.wrap td{overflow-wrap:normal;word-break:normal}:lang(ko) .wrap td{word-break:keep-all}
+figure{margin:1.2rem 0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1rem .8rem;box-shadow:var(--shadow)}
+figure h3{margin:0 0 .3rem;font-size:1rem}figcaption{font-size:.86rem;color:var(--fg2);margin-top:.5rem;line-height:1.5}
+.chart{overflow-x:auto}svg{max-width:100%;height:auto;display:block}svg text{font-family:var(--body);fill:var(--fg2);font-size:13px}svg .grid{stroke:var(--grid)}svg .ax{stroke:var(--line)}
+svg .hit:hover{stroke:var(--fg);stroke-width:1.5}svg .cell:hover{stroke:var(--fg);stroke-width:1.5}
+.legend{display:flex;gap:1rem;font-size:.85rem;color:var(--fg2);flex-wrap:wrap;margin:.2rem 0 .5rem}.legend span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:.35rem;vertical-align:-1px;background:var(--c)}
+.legend span.h::before{background:repeating-linear-gradient(45deg,var(--fg3) 0 1.5px,transparent 1.5px 4px);border:1px solid var(--fg3)}
+details{margin-top:.6rem}summary{cursor:pointer;color:var(--fg2);font-size:.88rem}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:2.4rem;padding-top:1rem;font-size:.92rem}.pn a[rel=next]{margin-left:auto;text-align:right}.pn small{display:block;color:var(--fg3)}
+.files a{display:inline-block;font-size:.85rem;background:var(--bg2);border:1px solid var(--line2);border-radius:6px;padding:.15rem .55rem;margin:.2rem .3rem .2rem 0;color:var(--fg2)}
+footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;padding:1.2rem;text-align:center}
+@media(max-width:640px){.chart svg{min-width:640px}.chart svg text{font-size:13px}header{gap:.6rem}}
+</style></head><body>
+<header><a class="brand" href="../ko/index.html">가요 차트 100년</a><nav><a href="../ko/index.html">처음</a><a href="../ko/ch0.html">장</a><a href="../ko/data.html">데이터</a><a href="../ko/method.html">방법</a></nav>
+<div class="right"><button id="theme" class="theme" type="button" aria-label="테마">◑</button><a class="lang" href="../en/ch3.html">English</a></div></header>
+<main><h1>3장. 주간 순위 프로그램 (1981~1998)</h1><div class="prose"><blockquote>
+<p><strong>핵심.</strong> 1981년부터 1998년까지 텔레비전 주간 순위의 중심은 KBS 「가요톱10」이었다. 1위는 투표인단의 투표로 정했다. 5주 연속 1위 곡을 집계에서 빼는 규칙 아래에서 1위 연속 기록은 5주를 넘지 않았다. 1위 목록은 당대 신문으로 일부만 확인된다.</p>
+</blockquote>
+<h2>「가요톱10」의 집계 방식</h2>
+<p>1981년 2월 10일 동아일보는 KBS 1TV가 화요일 저녁 7시 40분에 「가요톱10」을 신설한다고 알렸다. 8개 지방국을 연결해 「전국 각계 각층의 투표인단 1천3백여명」이 고른 인기가요 10곡을 내보낸다는 설명이었다.</p>
+<p>집계 방식에 관한 당대 보도는 다음과 같다.</p>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>보도 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1981. 2. 10.</td>
+<td>투표인단 1,300여 명이 선정</td>
+</tr>
+<tr>
+<td>1983. 11. 17.</td>
+<td>독자 투고: 국내 음반 판매량과 「선거인단」 투표 결과를 기준으로 한다고 하나 선거인단이 막연하다</td>
+</tr>
+<tr>
+<td>1986. 2. 14.</td>
+<td>그때까지는 일반 시청자 1천여 명의 투표인단이 10곡씩 써낸 결과를 70% 반영하고 전문가 선정을 더했다. 다음 주부터 보완</td>
+</tr>
+<tr>
+<td>1993. 11. 4.</td>
+<td>투표자 연령을 고려해 10대 편중을 고친다. 다른 방송사 순위 프로그램이 가을 개편으로 모두 없어져 유일하게 남은 순위 프로그램</td>
+</tr>
+<tr>
+<td>1996. 10. 17.</td>
+<td>방송 3사 순위 프로그램이 전화 응답, 투표, 엽서 집계를 쓰고 순위가 서로 다르다</td>
+</tr>
+</tbody>
+</table></div>
+<p>백과사전에는 「2,800명 표본과 집단 투표인단 200여 명, PD 추천을 8:2로 합산」이라는 설명이 있다. 이 설명의 출처는 1990년 연말결산 방송 소개면 하나다. 1981년과 1986년 보도의 숫자와는 다르다. 1986년 보완 이후 어느 시점의 방식일 수 있으나 적용 연도는 확인하지 못했다.</p>
+<h2>5주 규칙과 1위 기록의 모양</h2>
+<p>「가요톱10」에서는 5주 연속 1위를 한 곡에 「골든컵」을 주고 그 곡을 집계에서 뺐다. 1982년 조용필의 「못찾겠다 꾀꼬리」가 10주 연속 1위를 한 것이 계기였다고 전한다. 1983년 1월 26일 방송분부터 기준이 5주가 되었다고 백과사전 각주에 적혀 있다. 이 날짜는 당대 자료로 확인하지 못했다.</p>
+<p>1983년 1월 26일 이후 시작한 1위 연속 241회 가운데 85회가 정확히 5주에서 끝난다. 6주 이상은 없다. 그 전에 시작한 23회에는 7주와 10주가 한 번씩 있다. 결방 주는 건너뛰고 셌고, 1991년 12월 25일 공동 1위의 두 곡은 각각 셌다.</p>
+<figure><h3>「가요톱10」 1위 연속 주수</h3><div class="chart"><svg viewBox="0 0 900 230" role="img"><text x="40" y="14" style="fill:var(--fg)">1983. 1. 26.~1998. 2. (241회)</text><line class="ax" x1="40" y1="184" x2="560" y2="184"/><rect class="hit" x="58.7" y="74.1" width="66.6" height="109.9" rx="3" fill="var(--k1)"><title>1주 연속: 64회</title></rect><text x="92.0" y="70.1" text-anchor="middle">64</text><text x="92.0" y="199" text-anchor="middle">1</text><rect class="hit" x="162.7" y="115.3" width="66.6" height="68.7" rx="3" fill="var(--k1)"><title>2주 연속: 40회</title></rect><text x="196.0" y="111.3" text-anchor="middle">40</text><text x="196.0" y="199" text-anchor="middle">2</text><rect class="hit" x="266.7" y="122.2" width="66.6" height="61.8" rx="3" fill="var(--k1)"><title>3주 연속: 36회</title></rect><text x="300.0" y="118.2" text-anchor="middle">36</text><text x="300.0" y="199" text-anchor="middle">3</text><rect class="hit" x="370.7" y="156.5" width="66.6" height="27.5" rx="3" fill="var(--k1)"><title>4주 연속: 16회</title></rect><text x="404.0" y="152.5" text-anchor="middle">16</text><text x="404.0" y="199" text-anchor="middle">4</text><rect class="hit" x="474.7" y="38.0" width="66.6" height="146.0" rx="3" fill="var(--k1)"><title>5주 연속: 85회</title></rect><text x="508.0" y="34.0" text-anchor="middle">85</text><text x="508.0" y="199" text-anchor="middle">5</text><text x="590" y="14" style="fill:var(--fg)">1981. 2.~1983. 1. (23회)</text><line class="ax" x1="590" y1="184" x2="890" y2="184"/><rect class="hit" x="595.4" y="142.3" width="19.2" height="41.7" rx="3" fill="var(--k1)"><title>1주 연속: 2회</title></rect><text x="605.0" y="138.3" text-anchor="middle">2</text><text x="605.0" y="199" text-anchor="middle">1</text><rect class="hit" x="625.4" y="58.9" width="19.2" height="125.1" rx="3" fill="var(--k1)"><title>2주 연속: 6회</title></rect><text x="635.0" y="54.9" text-anchor="middle">6</text><text x="635.0" y="199" text-anchor="middle">2</text><rect class="hit" x="655.4" y="163.1" width="19.2" height="20.9" rx="3" fill="var(--k1)"><title>3주 연속: 1회</title></rect><text x="665.0" y="159.1" text-anchor="middle">1</text><text x="665.0" y="199" text-anchor="middle">3</text><rect class="hit" x="685.4" y="38.0" width="19.2" height="146.0" rx="3" fill="var(--k1)"><title>4주 연속: 7회</title></rect><text x="695.0" y="34.0" text-anchor="middle">7</text><text x="695.0" y="199" text-anchor="middle">4</text><rect class="hit" x="715.4" y="79.7" width="19.2" height="104.3" rx="3" fill="var(--k1)"><title>5주 연속: 5회</title></rect><text x="725.0" y="75.7" text-anchor="middle">5</text><text x="725.0" y="199" text-anchor="middle">5</text><text x="755.0" y="199" text-anchor="middle">6</text><rect class="hit" x="775.4" y="163.1" width="19.2" height="20.9" rx="3" fill="var(--k1)"><title>7주 연속: 1회</title></rect><text x="785.0" y="159.1" text-anchor="middle">1</text><text x="785.0" y="199" text-anchor="middle">7</text><text x="815.0" y="199" text-anchor="middle">8</text><text x="845.0" y="199" text-anchor="middle">9</text><rect class="hit" x="865.4" y="163.1" width="19.2" height="20.9" rx="3" fill="var(--k1)"><title>10주 연속: 1회</title></rect><text x="875.0" y="159.1" text-anchor="middle">1</text><text x="875.0" y="199" text-anchor="middle">10</text><text x="450.0" y="226" text-anchor="middle">연속 1위 주수(결방 주는 건너뛰고 셈)</text></svg></div><figcaption>5주에서 끊기는 것은 5주 1위 곡을 집계에서 빼는 규칙 때문이다. 인기의 크기를 뜻하지 않는다. 1위 목록은 백과사전 목록이 뼈대이고 당대 신문으로 확인한 주는 일부다.</figcaption><details><summary>표로 보기</summary><div class="wrap"><div class="wrap"><table><thead><tr><th class="num">연속 주수</th><th class="num">1983. 1. 26. 이후</th><th class="num">그 전</th></tr></thead><tbody><tr><td class="num">1</td><td class="num">64</td><td class="num">2</td></tr><tr><td class="num">2</td><td class="num">40</td><td class="num">6</td></tr><tr><td class="num">3</td><td class="num">36</td><td class="num">1</td></tr><tr><td class="num">4</td><td class="num">16</td><td class="num">7</td></tr><tr><td class="num">5</td><td class="num">85</td><td class="num">5</td></tr><tr><td class="num">6</td><td class="num">0</td><td class="num">0</td></tr><tr><td class="num">7</td><td class="num">0</td><td class="num">1</td></tr><tr><td class="num">8</td><td class="num">0</td><td class="num">0</td></tr><tr><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr><tr><td class="num">10</td><td class="num">0</td><td class="num">1</td></tr></tbody></table></div></div></details></figure>
+<p>5주에서 끊기는 모양은 집계 규칙에 따른 것이다. 노래의 인기가 5주에서 멈췄다는 뜻이 아니다.</p>
+<p>동아일보는 1993년과 1994년 상반기 결산 기사에서 그해 골든컵 곡을 시기순으로 적었다. 1993년 다섯 곡과 1994년 상반기 세 곡은 백과사전 목록과 순서까지 같다.</p>
+<h2>다른 방송사</h2>
+<ul>
+<li>MBC는 1990년 무렵 「쇼 네트워크」로 순위를 냈고 1990년 11월 「여러분의 인기가요」로 이름을 바꾸었다. 1993년 가을 개편으로 없어졌다가 1995년 4월 21일 「인기가요 베스트50」으로 다시 시작했다. 1998년 1월 17일 마지막으로 방송했다.</li>
+<li>SBS는 1991년 말부터 순위 프로그램을 냈다(2차 자료).</li>
+<li>1998년 6월 30일 동아일보는 「가요톱10」과 「인기가요50」이 「올들어 폐지」되었다고 적었다. 「가요톱10」의 마지막 방송일(1998. 2. 11.)은 2차 자료로만 확인했다.</li>
+</ul>
+<h2>1위 목록의 확인 상태</h2>
+<p>1위 목록 889행(888개 방송일, 순위가 없는 주 61행 포함)은 백과사전 목록을 뼈대로 삼았다. 이 목록을 동아일보 기사로 대조했다. 1990년 7월부터 1992년 초까지 동아일보는 매주 금요일 가요 인기 차트 칼럼에 「가요톱10」 1위를 적었다.</p>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>대조</th>
+<th>행</th>
+<th>일치</th>
+<th>불일치</th>
+<th>유보</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>미리 정한 표본 주(매월 첫 방송 주, 203주 중 확인된 주)</td>
+<td>18</td>
+<td>17</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>표본 밖 포함 전체(방송 주 기준)</td>
+<td>62</td>
+<td>51</td>
+<td>0</td>
+<td>11</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>일요일에 방송하던 1990년 7월~1991년 5월의 칼럼 23건은 모두 그 주 방송과 맞는다. 칼럼이 적은 연속 주수까지 같다.</li>
+<li>수요일로 옮긴 1991년 5월 22일 이후의 칼럼은 같은 주 방송과 맞추면 어긋나는 곳이 여럿이다. 한 주 앞 방송과 맞추면 대부분 맞지만 그래도 어긋나는 칼럼이 남는다. 칼럼이 어느 방송을 가리키는지 정할 수 없어 「유보」로 두었다.</li>
+<li>나머지 185개 표본 주는 아직 대조하지 못했다.</li>
+</ul>
+<h2>출처</h2>
+<ul>
+<li>[1차-보도] 동아일보 1981. 2. 10., 1983. 11. 17., 1986. 2. 14., 1993. 11. 4., 1996. 10. 17., 1998. 1. 19., 1998. 6. 30.(집계 방식·폐지).</li>
+<li>[1차-보도] 동아일보 1990. 7. 27.~1992. 2. 1. 가요 인기 차트 칼럼, 1993. 12. 28., 1994. 7. 6.(골든컵 결산) 등. 행마다 데이터 파일에 있다.</li>
+<li>[2차] 한국어 위키백과 「가요톱10」(판 42732877) — 1위 목록의 뼈대와 대조에만 썼다.</li>
+</ul></div><nav class="pn"><a rel="prev" href="ch2.html"><small>이전 장</small>2장. 시상식의 시대 (1945~1980)</a><a rel="next" href="ch4.html"><small>다음 장</small>4장. 판매 집계의 시대와 공백 (1998~2010)</a></nav></main>
+<footer>가요 차트 100년 · 판 0.1.1 · 생성 2026-11-05 · <a href="https://github.com/BowonKwon/Korean-Music-Charts">GitHub</a> · 다른 사이트 <a href="https://bowonkwon.github.io/">bowonkwon.github.io</a></footer>
+<script>(function(){var k="kmc-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>

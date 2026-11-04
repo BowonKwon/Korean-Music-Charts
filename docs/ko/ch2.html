@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2장. 시상식의 시대 (1945~1980) — 가요 차트 100년</title><meta name="description" content="누가, 무엇으로, 어떻게 노래의 순위를 매겨 왔나 — 1906년 유성기 녹음부터 디지털 차트까지">
+<script>(function(){var q=new URLSearchParams(location.search).get("theme");if(q==="light"||q==="dark"){localStorage.setItem("kmc-theme",q)}else if(q==="auto"){localStorage.removeItem("kmc-theme")}var v=localStorage.getItem("kmc-theme");if(v)document.documentElement.setAttribute("data-theme",v)})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#f8f7f4;--bg2:#efede8;--card:#ffffff;--line:#dedbd3;--line2:#ebe8e1;--fg:#1d1f24;--fg2:#5a5e68;--fg3:#8a8e98;
+--accent:#3f6a9e;--accent2:#b5833f;--k1:#3a6fb0;--k2:#b5833f;--k3:#7f63ad;--k4:#3f8f62;--grid:#e6e3dc;--gap:#efede8;
+--shadow:0 1px 2px rgba(30,32,40,.05),0 6px 18px rgba(30,32,40,.05);
+--display:"Noto Serif KR","Source Serif 4",Georgia,serif;--body:"Noto Sans KR",-apple-system,"Segoe UI","Apple SD Gothic Neo",Roboto,sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1b1c1f;--bg2:#222326;--card:#232428;--line:#34363c;--line2:#2b2d32;--fg:#ebe9e4;--fg2:#b3b1aa;--fg3:#80827f;--accent:#7ea4d6;--accent2:#d1a35f;--k1:#5a8ccf;--k2:#b5863a;--k3:#9078c4;--k4:#3fa06e;--grid:#2e3035;--gap:#26272b;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.25)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1b1c1f;--bg2:#222326;--card:#232428;--line:#34363c;--line2:#2b2d32;--fg:#ebe9e4;--fg2:#b3b1aa;--fg3:#80827f;--accent:#7ea4d6;--accent2:#d1a35f;--k1:#5a8ccf;--k2:#b5863a;--k3:#9078c4;--k4:#3fa06e;--grid:#2e3035;--gap:#26272b;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.25)}
+*{box-sizing:border-box}html,body{max-width:100%;overflow-x:hidden}
+body{margin:0;font:16px/1.7 var(--body);background:var(--bg);color:var(--fg);overflow-wrap:anywhere;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:.55rem 1.1rem;display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+header .brand{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--fg)}
+header nav{display:flex;gap:.9rem;flex-wrap:wrap}header nav a{color:var(--fg2);font-size:.92rem;border-bottom:2px solid transparent}header nav a:hover{text-decoration:none;color:var(--fg)}header nav a.on{color:var(--fg);border-bottom-color:var(--accent2)}
+header .right{margin-left:auto;display:flex;gap:.6rem;align-items:center}
+header .lang{font-size:.88rem;color:var(--fg2);border:1px solid var(--line);border-radius:999px;padding:.15rem .7rem}header .lang:hover{text-decoration:none;color:var(--fg)}
+.theme{border:1px solid var(--line);background:transparent;color:var(--fg2);border-radius:999px;width:30px;height:30px;cursor:pointer;font-size:.9rem;line-height:1;padding:0}
+main{max-width:980px;margin:0 auto;padding:1.6rem 1.1rem 4rem;min-width:0}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.25;margin:.3rem 0 .6rem;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:1.25rem;line-height:1.3;margin:2.2rem 0 .7rem;padding-bottom:.35rem;border-bottom:1px solid var(--line);text-wrap:balance}
+.eyebrow{color:var(--fg3);font-size:.84rem;letter-spacing:.03em}
+.hero{padding:.6rem 0 1.2rem;border-bottom:1px solid var(--line);margin-bottom:1.2rem}.hero h1{font-size:clamp(1.9rem,4vw,2.6rem)}.lead{color:var(--fg2);font-size:1.08rem;max-width:68ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.8rem;margin:.9rem 0 1.4rem}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem .9rem;box-shadow:var(--shadow);color:var(--fg)}a.card:hover{text-decoration:none;border-color:var(--fg3)}
+.card b{display:block;margin-bottom:.15rem;color:var(--accent)}.card .yr{font-size:.8rem;color:var(--fg3)}.card small{display:block;color:var(--fg2);font-size:.88rem;line-height:1.5;margin-top:.3rem}
+:lang(ko) p,:lang(ko) li,:lang(ko) .lead,:lang(ko) blockquote,:lang(ko) figcaption,:lang(ko) .card small{word-break:keep-all;overflow-wrap:anywhere}
+.prose p,.prose ul,.prose blockquote{max-width:72ch}.prose p{margin:.8rem 0}.prose ul{padding-left:1.2rem}.prose li{margin:.3rem 0}
+blockquote{border-left:4px solid var(--accent);background:var(--bg2);border-radius:0 10px 10px 0;padding:.75rem 1.1rem;margin:.8rem 0 1.4rem}blockquote p{margin:0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;margin:.6rem 0}th,td{border-bottom:1px solid var(--line2);padding:.42rem .6rem;text-align:left;vertical-align:top}
+thead th{color:var(--fg2);font-weight:600;font-size:.84rem;border-bottom:1px solid var(--line)}tbody tr:nth-child(even){background:color-mix(in srgb,var(--bg2) 55%,transparent)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:0 .3rem;margin:.6rem 0 1rem}.wrap table{margin:0}.wrap th,.wrap td{overflow-wrap:normal;word-break:normal}:lang(ko) .wrap td{word-break:keep-all}
+figure{margin:1.2rem 0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1rem .8rem;box-shadow:var(--shadow)}
+figure h3{margin:0 0 .3rem;font-size:1rem}figcaption{font-size:.86rem;color:var(--fg2);margin-top:.5rem;line-height:1.5}
+.chart{overflow-x:auto}svg{max-width:100%;height:auto;display:block}svg text{font-family:var(--body);fill:var(--fg2);font-size:13px}svg .grid{stroke:var(--grid)}svg .ax{stroke:var(--line)}
+svg .hit:hover{stroke:var(--fg);stroke-width:1.5}svg .cell:hover{stroke:var(--fg);stroke-width:1.5}
+.legend{display:flex;gap:1rem;font-size:.85rem;color:var(--fg2);flex-wrap:wrap;margin:.2rem 0 .5rem}.legend span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:.35rem;vertical-align:-1px;background:var(--c)}
+.legend span.h::before{background:repeating-linear-gradient(45deg,var(--fg3) 0 1.5px,transparent 1.5px 4px);border:1px solid var(--fg3)}
+details{margin-top:.6rem}summary{cursor:pointer;color:var(--fg2);font-size:.88rem}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:2.4rem;padding-top:1rem;font-size:.92rem}.pn a[rel=next]{margin-left:auto;text-align:right}.pn small{display:block;color:var(--fg3)}
+.files a{display:inline-block;font-size:.85rem;background:var(--bg2);border:1px solid var(--line2);border-radius:6px;padding:.15rem .55rem;margin:.2rem .3rem .2rem 0;color:var(--fg2)}
+footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;padding:1.2rem;text-align:center}
+@media(max-width:640px){.chart svg{min-width:640px}.chart svg text{font-size:13px}header{gap:.6rem}}
+</style></head><body>
+<header><a class="brand" href="../ko/index.html">가요 차트 100년</a><nav><a href="../ko/index.html">처음</a><a href="../ko/ch0.html">장</a><a href="../ko/data.html">데이터</a><a href="../ko/method.html">방법</a></nav>
+<div class="right"><button id="theme" class="theme" type="button" aria-label="테마">◑</button><a class="lang" href="../en/ch2.html">English</a></div></header>
+<main><h1>2장. 시상식의 시대 (1945~1980)</h1><div class="prose"><blockquote>
+<p><strong>핵심.</strong> 1981년 이전의 「순위」는 대부분 1년에 한 번 가수와 노래를 고르는 시상식이었다. 선정 방식은 투표인단, 시청자 엽서, 방송 기여도, 설문을 섞어 썼다. 매주 순위를 낸 사례는 1972년 동아방송 라디오에서 한 차례 지면으로 확인된다.</p>
+</blockquote>
+<h2>방송가요대상 (1965~)</h2>
+<p>1965년 5월 9일 라디오서울 방송이 제1회 「라디오·서울 방송가요대상」을 시상했다. 이 상은 이후 중앙일보·동양방송(TBC)의 「방송가요대상」으로 이어졌다. 1981년 언론 통폐합 뒤에는 KBS 가요대상으로 이어졌다고 알려져 있다. 그 연결은 2차 자료로만 확인했다.</p>
+<p>선정 방식이 기사에 적힌 해는 1971년 제7회다. 투표인단 180명의 투표 결과를 참작해 집행위원회가 최종 결정했다. 이번에 수상자를 확인한 해는 1965·1968·1971·1972·1974년이다. 1967년은 후보만 확인했다.</p>
+<h2>MBC 10대 가수 (1966~)</h2>
+<p>MBC가 고른 「10대 가수」는 1966년 12월 개국 5주년 기념 공연 기사에서 처음 확인된다. 선정 방식은 해마다 조금씩 달랐다.</p>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>해</th>
+<th>기사에 적힌 선정 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1977</td>
+<td>시청자 엽서와 가수의 방송 기여도. 엽서에는 좋아하는 가수 3명과 노래 1곡을 적었다</td>
+</tr>
+<tr>
+<td>1978</td>
+<td>10대 가수는 시청자 엽서로 골랐다. 그중 최고인기가수는 시청자 엽서 80%, 가요제 입장객 투표 20%</td>
+</tr>
+<tr>
+<td>1979</td>
+<td>시청자·청취자 엽서 투표와 2천 명에게 돌린 설문</td>
+</tr>
+</tbody>
+</table></div>
+<p>1987년 10월 KBS와 MBC는 연말 시상식의 선정 방식을 바꾸겠다고 밝혔다. 「연말 무더기엽서」 때문에 공정성에 문제가 있다는 이유였다. 같은 해 12월 MBC는 「10대가수상」을 없애고 송년 축제로 바꾸었다. KBS도 같은 시기에 상 이름을 「올해의 가수상」으로 바꾸고 규모를 줄였다.</p>
+<p>KBS도 1979년 12월에 10대 가수를 발표했다. 최고인기가수는 12월 30일 「인기가수청백전」에서 뽑기로 했다.</p>
+<h2>1972년의 주간 순위</h2>
+<p>1972년 10월 21일 동아일보는 동아방송(DBS)이 매주 일요일 오후 6시에 「이주일의 10대가요」를 선정해 왔다고 소개했다. 선정 근거는 세 가지였다. 청취자의 신청, 각종 가요 프로그램의 방송 빈도, 음반 판매량이다. 방송에 적합한 노래만 대상으로 했다. 기사는 앞으로 매주 토요일 지면에 순위를 싣겠다고 밝혔고, 실제로 10월 28일, 11월 4일, 11월 11일, 11월 25일 석간 8면에 순위표가 실렸다.</p>
+<p>이것이 「가요톱10」(1981)보다 9년 앞서 확인되는 정기 순위다. 언제 시작해 언제 끝났는지, 순위표에 어떤 노래가 올랐는지는 아직 확인하지 못했다.</p>
+<h2>자료 상태</h2>
+<ul>
+<li>시상식 수상자는 신문 기사의 첫머리(검색 결과에 공개되는 범위)로 확인했다. 첫머리에서 명단이 잘린 해(1979년 MBC 여자 가수)는 일부만 적었다.</li>
+<li>1966~1976년 MBC 10대 가수 명단과 TBC 1966·1967·1969·1970·1973년 수상자는 확인하지 못했다.</li>
+<li>1973~1980년에 다른 방송사의 정기 순위가 있었는지는 이번 검색 범위에서 확인되지 않았다.</li>
+</ul>
+<h2>출처</h2>
+<ul>
+<li>[1차-보도] 동아일보 1965. 5. 11.(라디오서울 방송가요대상 제1회), 1967. 8. 12., 1968. 9. 24., 1971. 9. 22., 1972. 9. 21., 1974. 9. 28.(방송가요대상).</li>
+<li>[1차-보도] 동아일보 1966. 12. 1., 1977. 9. 28., 1977. 10. 20., 1978. 10. 17., 1978. 10. 24., 1979. 10. 15., 1980. 12. 13.(MBC 10대 가수).</li>
+<li>[1차-보도] 동아일보 1979. 12. 26.(KBS 10대 가수), 1987. 10. 16., 1987. 12. 3.(선정 방식 변경).</li>
+<li>[1차-보도] 동아일보 1972. 10. 21.(DBS 「이주일의 10대가요」 소개), 1972. 10. 28.·11. 4.·11. 11.·11. 25.(순위표).</li>
+<li>모두 동아디지털아카이브. 수상자와 선정 방식은 데이터 파일 <code>ch2_awards.csv</code> 에 행마다 있다.</li>
+</ul></div><nav class="pn"><a rel="prev" href="ch1.html"><small>이전 장</small>1장. 목록의 시대 — 순위 없는 인기 (1906~1945)</a><a rel="next" href="ch3.html"><small>다음 장</small>3장. 주간 순위 프로그램 (1981~1998)</a></nav></main>
+<footer>가요 차트 100년 · 판 0.1.1 · 생성 2026-11-05 · <a href="https://github.com/BowonKwon/Korean-Music-Charts">GitHub</a> · 다른 사이트 <a href="https://bowonkwon.github.io/">bowonkwon.github.io</a></footer>
+<script>(function(){var k="kmc-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>

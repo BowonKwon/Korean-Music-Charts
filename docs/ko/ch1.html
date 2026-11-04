@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1장. 목록의 시대 — 순위 없는 인기 (1906~1945) — 가요 차트 100년</title><meta name="description" content="누가, 무엇으로, 어떻게 노래의 순위를 매겨 왔나 — 1906년 유성기 녹음부터 디지털 차트까지">
+<script>(function(){var q=new URLSearchParams(location.search).get("theme");if(q==="light"||q==="dark"){localStorage.setItem("kmc-theme",q)}else if(q==="auto"){localStorage.removeItem("kmc-theme")}var v=localStorage.getItem("kmc-theme");if(v)document.documentElement.setAttribute("data-theme",v)})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#f8f7f4;--bg2:#efede8;--card:#ffffff;--line:#dedbd3;--line2:#ebe8e1;--fg:#1d1f24;--fg2:#5a5e68;--fg3:#8a8e98;
+--accent:#3f6a9e;--accent2:#b5833f;--k1:#3a6fb0;--k2:#b5833f;--k3:#7f63ad;--k4:#3f8f62;--grid:#e6e3dc;--gap:#efede8;
+--shadow:0 1px 2px rgba(30,32,40,.05),0 6px 18px rgba(30,32,40,.05);
+--display:"Noto Serif KR","Source Serif 4",Georgia,serif;--body:"Noto Sans KR",-apple-system,"Segoe UI","Apple SD Gothic Neo",Roboto,sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1b1c1f;--bg2:#222326;--card:#232428;--line:#34363c;--line2:#2b2d32;--fg:#ebe9e4;--fg2:#b3b1aa;--fg3:#80827f;--accent:#7ea4d6;--accent2:#d1a35f;--k1:#5a8ccf;--k2:#b5863a;--k3:#9078c4;--k4:#3fa06e;--grid:#2e3035;--gap:#26272b;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.25)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1b1c1f;--bg2:#222326;--card:#232428;--line:#34363c;--line2:#2b2d32;--fg:#ebe9e4;--fg2:#b3b1aa;--fg3:#80827f;--accent:#7ea4d6;--accent2:#d1a35f;--k1:#5a8ccf;--k2:#b5863a;--k3:#9078c4;--k4:#3fa06e;--grid:#2e3035;--gap:#26272b;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 20px rgba(0,0,0,.25)}
+*{box-sizing:border-box}html,body{max-width:100%;overflow-x:hidden}
+body{margin:0;font:16px/1.7 var(--body);background:var(--bg);color:var(--fg);overflow-wrap:anywhere;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:.55rem 1.1rem;display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+header .brand{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--fg)}
+header nav{display:flex;gap:.9rem;flex-wrap:wrap}header nav a{color:var(--fg2);font-size:.92rem;border-bottom:2px solid transparent}header nav a:hover{text-decoration:none;color:var(--fg)}header nav a.on{color:var(--fg);border-bottom-color:var(--accent2)}
+header .right{margin-left:auto;display:flex;gap:.6rem;align-items:center}
+header .lang{font-size:.88rem;color:var(--fg2);border:1px solid var(--line);border-radius:999px;padding:.15rem .7rem}header .lang:hover{text-decoration:none;color:var(--fg)}
+.theme{border:1px solid var(--line);background:transparent;color:var(--fg2);border-radius:999px;width:30px;height:30px;cursor:pointer;font-size:.9rem;line-height:1;padding:0}
+main{max-width:980px;margin:0 auto;padding:1.6rem 1.1rem 4rem;min-width:0}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.25;margin:.3rem 0 .6rem;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:1.25rem;line-height:1.3;margin:2.2rem 0 .7rem;padding-bottom:.35rem;border-bottom:1px solid var(--line);text-wrap:balance}
+.eyebrow{color:var(--fg3);font-size:.84rem;letter-spacing:.03em}
+.hero{padding:.6rem 0 1.2rem;border-bottom:1px solid var(--line);margin-bottom:1.2rem}.hero h1{font-size:clamp(1.9rem,4vw,2.6rem)}.lead{color:var(--fg2);font-size:1.08rem;max-width:68ch}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.8rem;margin:.9rem 0 1.4rem}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem .9rem;box-shadow:var(--shadow);color:var(--fg)}a.card:hover{text-decoration:none;border-color:var(--fg3)}
+.card b{display:block;margin-bottom:.15rem;color:var(--accent)}.card .yr{font-size:.8rem;color:var(--fg3)}.card small{display:block;color:var(--fg2);font-size:.88rem;line-height:1.5;margin-top:.3rem}
+:lang(ko) p,:lang(ko) li,:lang(ko) .lead,:lang(ko) blockquote,:lang(ko) figcaption,:lang(ko) .card small{word-break:keep-all;overflow-wrap:anywhere}
+.prose p,.prose ul,.prose blockquote{max-width:72ch}.prose p{margin:.8rem 0}.prose ul{padding-left:1.2rem}.prose li{margin:.3rem 0}
+blockquote{border-left:4px solid var(--accent);background:var(--bg2);border-radius:0 10px 10px 0;padding:.75rem 1.1rem;margin:.8rem 0 1.4rem}blockquote p{margin:0}
+table{border-collapse:collapse;width:100%;font-size:.9rem;margin:.6rem 0}th,td{border-bottom:1px solid var(--line2);padding:.42rem .6rem;text-align:left;vertical-align:top}
+thead th{color:var(--fg2);font-weight:600;font-size:.84rem;border-bottom:1px solid var(--line)}tbody tr:nth-child(even){background:color-mix(in srgb,var(--bg2) 55%,transparent)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card);padding:0 .3rem;margin:.6rem 0 1rem}.wrap table{margin:0}.wrap th,.wrap td{overflow-wrap:normal;word-break:normal}:lang(ko) .wrap td{word-break:keep-all}
+figure{margin:1.2rem 0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1rem .8rem;box-shadow:var(--shadow)}
+figure h3{margin:0 0 .3rem;font-size:1rem}figcaption{font-size:.86rem;color:var(--fg2);margin-top:.5rem;line-height:1.5}
+.chart{overflow-x:auto}svg{max-width:100%;height:auto;display:block}svg text{font-family:var(--body);fill:var(--fg2);font-size:13px}svg .grid{stroke:var(--grid)}svg .ax{stroke:var(--line)}
+svg .hit:hover{stroke:var(--fg);stroke-width:1.5}svg .cell:hover{stroke:var(--fg);stroke-width:1.5}
+.legend{display:flex;gap:1rem;font-size:.85rem;color:var(--fg2);flex-wrap:wrap;margin:.2rem 0 .5rem}.legend span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:.35rem;vertical-align:-1px;background:var(--c)}
+.legend span.h::before{background:repeating-linear-gradient(45deg,var(--fg3) 0 1.5px,transparent 1.5px 4px);border:1px solid var(--fg3)}
+details{margin-top:.6rem}summary{cursor:pointer;color:var(--fg2);font-size:.88rem}
+.pn{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:2.4rem;padding-top:1rem;font-size:.92rem}.pn a[rel=next]{margin-left:auto;text-align:right}.pn small{display:block;color:var(--fg3)}
+.files a{display:inline-block;font-size:.85rem;background:var(--bg2);border:1px solid var(--line2);border-radius:6px;padding:.15rem .55rem;margin:.2rem .3rem .2rem 0;color:var(--fg2)}
+footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;padding:1.2rem;text-align:center}
+@media(max-width:640px){.chart svg{min-width:640px}.chart svg text{font-size:13px}header{gap:.6rem}}
+</style></head><body>
+<header><a class="brand" href="../ko/index.html">가요 차트 100년</a><nav><a href="../ko/index.html">처음</a><a href="../ko/ch0.html">장</a><a href="../ko/data.html">데이터</a><a href="../ko/method.html">방법</a></nav>
+<div class="right"><button id="theme" class="theme" type="button" aria-label="테마">◑</button><a class="lang" href="../en/ch1.html">English</a></div></header>
+<main><h1>1장. 목록의 시대 — 순위 없는 인기 (1906~1945)</h1><div class="prose"><blockquote>
+<p><strong>핵심.</strong> 유성기 음반 시대에는 판매 순위가 확인되지 않는다. 이 시기 「인기」의 흔적은 1935년 잡지 독자 투표 한 번, 음반 검열 처분 건수, 음반 가격을 정한 관청 고시 같은 다른 종류의 기록에 남아 있다.</p>
+</blockquote>
+<h2>녹음과 판매의 시작</h2>
+<p>한국어 노래의 상업 녹음은 1906년에 이루어졌다. 미국 콜럼비아가 2월 오사카에서, 빅터가 11~12월 서울에서 녹음했다. 음반 판매는 1907년에 시작되었다. 흔히 「1907년 첫 녹음」으로 알려진 연도는 판매가 시작된 해다(배연형·석지훈 2015).</p>
+<p>1933년 잡지 「별건곤」 기사는 경성의 유성기 회사가 지점·대리점을 합쳐 여섯 곳이라고 적었다. 빅타·콜럼비아에 포리돌·시에론·오케·태평이 새로 들어왔다는 것이다. 같은 기사에 따르면 콜럼비아는 숨은 가수를 찾으려고 전 조선 열 곳에 시험장을 두었고, 1등에게 전속 계약과 일본 쇼치쿠(松竹) 입사를 내걸었다. 따로 문예부 부원 한 사람을 뽑는 시험에는 60여 명이 응모했다. 음반 한 장 값으로 「일 원 오십 전」이 언급된다. 판매 매수나 발매 수는 적혀 있지 않다.</p>
+<h2>검열과 가격 통제</h2>
+<p>1933년 6월 조선총독부 경무국 기관지 「경무휘보」에 「축음기 레코드 취체에 대하여」라는 글이 실렸다. 데이터베이스에는 목차만 있어 본문은 확인하지 못했다. 이듬해 2월 2일 京城日報 기사 제목은 「작년의 처분 레코드는 94」다. 1933년 한 해 처분된 음반이 94종이었다는 뜻으로 읽히지만, 내역은 기사 이미지를 판독해야 알 수 있다.</p>
+<p>1940년 7월부터 1944년 2월까지 조선총독부 관보에는 가격등통제령에 따라 축음기 레코드의 판매가격을 지정하거나 고친 고시가 7건 실렸다(폐품 레코드 1건 포함). 고시 제목은 확인했고 가격표 본문은 아직 읽지 않았다.</p>
+<h2>1935년 「삼천리」 레코드 가수 인기투표</h2>
+<p>이 시기에 순위 형태로 확인되는 자료는 잡지 「삼천리」의 독자 투표 하나다. 1935년 봄에 시작해 10월호에 결과를 실었다. 남가수와 여가수 두 부문으로 나뉘어 있다. 남가수 부문 1위는 채규엽(1,844표), 여가수 부문 1위는 왕수복(1,903표)이다.</p>
+<p>이 투표의 1위를 두고 회고 글들이 채규엽과 왕수복으로 엇갈리게 적어 왔다. 원문을 보면 부문이 달랐을 뿐 두 서술 모두 맞다.</p>
+<p>원문은 부문마다 「以上 投票枚數計」를 적었다. 남가수 5,888매는 1~5위와 차위(次位) 네 명의 득표를 더한 값과 같다. 여가수는 4,243표로 적혀 있는데, 같은 방식으로 1~5위와 차점(次点) 다섯 명을 더하면 6,243표가 되어 2,000표 차이가 난다. 원문 총계 10,130표는 두 부문 원문 수치의 합(10,131)과 1표 다르다. 어느 숫자가 오식인지는 지면 이미지로 확인하기 전까지 정하지 않는다.</p>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>부문</th>
+<th>1위</th>
+<th>2위</th>
+<th>3위</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>남가수</td>
+<td>채규엽 1,844</td>
+<td>김용환 1,335</td>
+<td>고복수 674</td>
+</tr>
+<tr>
+<td>여가수</td>
+<td>왕수복 1,903</td>
+<td>선우일선 1,166</td>
+<td>이난영 873</td>
+</tr>
+</tbody>
+</table></div>
+<p>5위까지와 소속 음반사 표기는 데이터 파일에 있다. 각 가수의 소속 음반사는 원문 표기대로 옮겼다.</p>
+<h2>자료 상태</h2>
+<ul>
+<li>「삼천리」 투표: 국사편찬위원회 한국사데이터베이스의 텍스트로 인명·득표·합계를 확인했다. 지면 이미지 대조는 하지 않았다.</li>
+<li>「경무휘보」 본문, 京城日報 94종의 내역, 관보 가격표: 미확인.</li>
+<li>유성기 음반의 연도별 발매 수(그림 F3 예정)는 서지 데이터의 공개 조건을 확인하는 중이라 이번 판에 넣지 않았다.</li>
+</ul>
+<h2>출처</h2>
+<ul>
+<li>[학술] 배연형·석지훈, 「20세기 초 유성기음반 녹음 연구」, 『한국음악연구』 제58집(2015. 12.), 7–75쪽.</li>
+<li>[1차] 「별건곤」 제67호(1933. 11.), 「레코-드의 熱狂時代 競爭의 한토막 이약이」(국사편찬위원회 한국사데이터베이스).</li>
+<li>[1차, 목차만] 「경무휘보」 제326호(1933. 6.), 「蓄音機‘レコ―ド’取締に就いて」(같은 곳).</li>
+<li>[1차, 제목만] 京城日報 1934. 2. 2. 석간(신문스크랩자료, 같은 곳).</li>
+<li>[1차, 제목만] 조선총독부 관보 1940. 7. 5.~1944. 2. 25. 고시 7건(국사편찬위원회 연속간행물 메타데이터, 공공누리 제1유형).</li>
+<li>[1차] 「삼천리」 제7권 제9호(1935. 10.), 「레코-드 歌手 人氣投票」(국사편찬위원회 한국사데이터베이스).</li>
+</ul></div><nav class="pn"><a rel="prev" href="ch0.html"><small>이전 장</small>0장. 순위를 매기는 방법들</a><a rel="next" href="ch2.html"><small>다음 장</small>2장. 시상식의 시대 (1945~1980)</a></nav></main>
+<footer>가요 차트 100년 · 판 0.1.1 · 생성 2026-11-05 · <a href="https://github.com/BowonKwon/Korean-Music-Charts">GitHub</a> · 다른 사이트 <a href="https://bowonkwon.github.io/">bowonkwon.github.io</a></footer>
+<script>(function(){var k="kmc-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>

@@ -1,0 +1,21 @@
+row,row_label_ko,row_label_en,kind,start,end,regular,grade,segment_note_ko,segment_note_en,source_ids
+1,잡지 인기투표,Magazine readers' poll,award,1935.0,1935.8,0,1차,「삼천리」 레코드 가수 인기투표(남·여 부문),Samcheolli record-singer poll (men's and women's divisions),C1-1
+2,라디오서울·TBC 방송가요대상,Radio Seoul / TBC song awards,award,1965.35,1980.95,0,1차-보도,1965. 5. 제1회 라디오서울 방송가요대상,"First Radio Seoul award, May 1965",ch2_awards
+2,라디오서울·TBC 방송가요대상,Radio Seoul / TBC song awards,award,1981.0,2006.95,0,2차,1981 언론 통폐합 뒤 KBS 가요대상(2006 폐지),KBS Song Awards after the 1981 broadcaster merger (ended 2006),S1b
+3,MBC 10대 가수,MBC Top 10 Singers,award,1966.9,1987.95,0,1차-보도,엽서·방송 기여도(1977)·엽서 80%+입장객 20%(1978),Postcards and airplay (1977); postcards 80% + audience 20% (1978),S1
+3,MBC 10대 가수,MBC Top 10 Singers,award,1989.0,2004.95,0,2차,변형 뒤 재개(2005 시상 폐지),Resumed after changes (awards dropped 2005),S1
+4,KBS 10대 가수,KBS Top 10 Singers,award,1979.9,1980.0,0,1차-보도,1979. 12. 선정,Selected December 1979,ch2_awards
+5,DBS 「이주일의 10대가요」,DBS weekly top 10 (radio),broadcast,1972.79,1972.91,1,1차-보도,"청취자 신청·방송 빈도·음반 판매 참고, 동아일보에 순위표 4회(1972. 10.~11.)","Listener requests, airplay and disc sales; four tables printed Oct–Nov 1972",S0
+6,KBS 「가요톱10」,KBS Gayo Top 10,broadcast,1981.11,1998.11,1,1차-보도,"투표인단 1,300여 명(1981) → 1천여 명 70%(~1986) → 보완",Voter panel of about 1300 (1981) → about 1000 at 70% (to 1986) → revised,S2
+7,MBC 순위 프로그램,MBC chart shows,broadcast,1990.66,1993.8,1,1차-보도,「쇼 네트워크」→「여러분의 인기가요」(1990. 11. 개칭). 시작은 확인된 첫 보도(1990. 8.)부터 그림,Show Network → Yeoreobunui Ingi Gayo (renamed Nov 1990); drawn from the first report found (Aug 1990),동아일보 1990. 8. 31.·1990. 11. 16.·1993. 11. 4.·1995. 4. 7.·1998. 1. 19.
+7,MBC 순위 프로그램,MBC chart shows,broadcast,1995.3,1998.05,1,1차-보도,「인기가요 베스트50」 1995. 4. 21.~1998. 1. 17.,"Ingi Gayo Best 50, 21 Apr 1995–17 Jan 1998",동아일보 1990. 8. 31.·1990. 11. 16.·1993. 11. 4.·1995. 4. 7.·1998. 1. 19.
+8,SBS 순위 프로그램,SBS chart shows,broadcast,1991.95,2003.1,1,2차,「인기가요」·「생방송 TV가요20」(2003. 2. 9. 순위제 폐지),Inkigayo / TV Gayo 20 (rankings dropped 9 Feb 2003),S8
+8,SBS 순위 프로그램,SBS chart shows,broadcast,2013.2,2026.8,1,1차-보도,2013. 3. 17. 「인기가요 차트」로 부활,Revived as the Inkigayo chart on 17 Mar 2013,S12
+9,KBS 「뮤직뱅크」,KBS Music Bank,broadcast,1998.45,2001.85,1,2차,순위제(2001 말 폐지),Ranked format (dropped late 2001),S7
+9,KBS 「뮤직뱅크」,KBS Music Bank,broadcast,2007.7,2026.8,1,1차-보도,부문별 차트(2007. 9.) → K-차트(2008. 1.),Category charts (Sep 2007) → K-Chart (Jan 2008),S9
+10,MIAK 월간 음반 판매,MIAK monthly album sales,sales,1998.6,2008.75,1,1차,음반사 자진 보고·월간 공표,Labels' self-reported sales; published monthly,S6
+11,한터차트,Hanteo Chart,sales,1993.0,2026.8,1,1차-보도,민간 판매 집계(자사 설명),Private sales tally (company's own account),노컷뉴스·파이낸셜뉴스(한터 설립·바코드 집계 보도)
+12,가온차트·써클차트,Gaon Chart / Circle Chart,digital,2010.15,2026.8,1,1차-보도,"2010. 2. 23. 출범, 2022. 7. 7. 써클차트로 개편","Launched 23 Feb 2010, renamed Circle Chart 7 Jul 2022",S10;S19
+13,Billboard K-pop Hot 100,Billboard K-pop Hot 100,digital,2011.65,2014.55,1,1차-보도,2011. 8. 25. 개시,Launched 25 Aug 2011,S11
+13,Billboard K-pop Hot 100,Billboard K-pop Hot 100,digital,2017.4,2022.3,1,2차,재개(2017)·한국판 중단(2022. 4.),Relaunched (2017); Korean edition stopped (Apr 2022),S18
+14,멜론 24Hits·TOP100,Melon 24Hits / TOP100,digital,2020.5,2026.8,1,1차,실시간 → 24시간 누적(2020. 7.) → TOP100(2021. 8.),Real-time → 24-hour rolling (Jul 2020) → TOP100 (Aug 2021),S15;S16
