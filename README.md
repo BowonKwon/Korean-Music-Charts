@@ -29,6 +29,16 @@ The CSV files in `data/` (UTF-8) hold only facts such as titles, artists, ranks,
 
 No lyrics, audio, album covers, broadcast images, or newspaper page images are published. The site does not discuss allegations of chart manipulation against any singer or agency and builds no measure comparing singers' popularity.
 
+## 판 이력 · Version history
+
+판 번호는 사이트 아래쪽 꼬리글에 있습니다. · The version number is in the footer of every page.
+
+| 판 · Version | 날짜 · Date | 바뀐 것 · Changes |
+|---|---|---|
+| 0.1.4 | 2026-11-16 | 그래프 설명 보강(축 이름과 단위, 띠 그림의 두 줄 묶음 이름, 자료에서 계산한 읽는 법, 「가요톱10」 1위 연속 막대 두 묶음을 같은 눈금으로, 시상식 줄 이름에 KBS 구간 표시), 좁은 화면에서 그림 옆으로 넘기기, 공개 자료 허브 링크. 자료 값 변화 없음 · Chart explanations (axis names and units, the two row groups named on the band chart, readings computed from the data, both No. 1-run panels on one scale, award row renamed to show the KBS segment), sideways scrolling on narrow screens, hub link. No data value changed |
+| 0.1.3 | 2026-11-06 | 동아방송 「이주일의 10대가요」 1972년 10월 28일 순위표 판독(1위와 지난주 1위)을 2장과 자료에 반영 · DBS weekly top 10 of 28 October 1972 read (No. 1 and the previous week's No. 1), added to Chapter 2 and the data |
+| 0.1.2 | 2026-11-06 | 첫 공개. 동아일보 지면 대조 결과를 3장에 반영하고, 「삼천리」 지면으로 인쇄된 합계를 확인 · First public release. Results of checks against Dong-A Ilbo pages added to Chapter 3; the printed totals in *Samcheolli* confirmed from the page image |
+
 ## 라이선스 · License
 
 [LICENSE.md](LICENSE.md)
