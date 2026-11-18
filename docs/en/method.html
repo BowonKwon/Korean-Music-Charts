@@ -49,10 +49,29 @@ details{margin-top:.6rem}summary{cursor:pointer;color:var(--fg2);font-size:.88re
 .files a{display:inline-block;font-size:.85rem;background:var(--bg2);border:1px solid var(--line2);border-radius:6px;padding:.15rem .55rem;margin:.2rem .3rem .2rem 0;color:var(--fg2)}
 footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;padding:1.2rem;text-align:center}
 @media(max-width:640px){.chart svg{min-width:720px}.chart svg text{font-size:13px}header{gap:.6rem}}
+
+h2[id],h3[id],figure[id],nav.toc{scroll-margin-top:var(--hh,.9rem)}
+@media(min-width:900px){body{overflow-x:clip}h2[id],h3[id],figure[id],nav.toc{scroll-margin-top:var(--hh,3.9rem)}.sibs{top:var(--hh,3.9rem);max-height:calc(100vh - var(--hh,3.9rem) - .8rem)}}
+.hx{margin-left:.45rem;font-family:var(--body);font-size:.8em;font-weight:400;color:var(--fg3);opacity:0;transition:opacity .15s}.hx:hover{text-decoration:none;color:var(--accent)}
+h2:hover .hx,h3:hover .hx,.hx:focus-visible{opacity:1}@media(hover:none){.hx{opacity:.6}}
+nav.toc{border:1px solid var(--line);border-radius:10px;background:var(--card);padding:.7rem 1rem .8rem;margin:1.3rem 0 .2rem;font-size:.92rem;max-width:72ch}
+nav.toc b{display:block;font-size:.84rem;font-weight:600;color:var(--fg2);margin-bottom:.3rem}
+nav.toc ul{list-style:none;margin:0;padding:0;columns:2;column-gap:1.8rem;max-width:none}nav.toc li{margin:0;padding:.14rem 0;break-inside:avoid;line-height:1.5}
+@media(max-width:640px){nav.toc ul{columns:1}}
+.chlist{margin:.1rem 0 1rem;font-size:.92rem}.chlist summary{font-size:.92rem}.chlist summary small{color:var(--fg3);margin-left:.4rem}
+.chlist ol,.chlist .box{list-style:none;margin:.5rem 0 .4rem;padding:.6rem 1rem .7rem;border:1px solid var(--line);border-radius:10px;background:var(--card);max-width:72ch}
+.chlist li{margin:0;padding:.16rem 0;line-height:1.5}.chlist li small{color:var(--fg3);margin-left:.35rem;white-space:nowrap}
+.chlist a[aria-current]{color:var(--fg);font-weight:600}.chlist p{margin:.3rem 0 0;font-size:.88rem}
+.chlist .tree,.chlist .tree ul{list-style:none;margin:0;padding:0}.chlist .tree>li{padding:.3rem 0}.chlist .tree>li>a{font-weight:600}
+.chlist .tree ul{padding-left:1rem;font-size:.95em}.chlist .box b{display:block;margin:.7rem 0 .1rem;font-size:.84rem;font-weight:600;color:var(--fg2);border-top:1px solid var(--line2);padding-top:.6rem}
+.totoc{position:fixed;right:.9rem;bottom:.9rem;z-index:6;font-size:.84rem;font-weight:600;line-height:1;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:.55rem .85rem;box-shadow:var(--shadow)}
+.totoc:hover{text-decoration:none;border-color:var(--accent);color:var(--accent)}
+.navjs .totoc{opacity:0;visibility:hidden;transition:opacity .15s,visibility .15s}.navjs .totoc.show{opacity:1;visibility:visible}
+@media print{.totoc,.hx{display:none}}
 </style></head><body>
-<header><a class="brand" href="../en/index.html">Korean Music Charts</a><nav><a href="../en/index.html">Home</a><a href="../en/ch0.html">Chapters</a><a href="../en/data.html">Data</a><a href="../en/method.html" class="on">Method</a></nav>
+<header><a class="brand" href="../en/index.html">Korean Music Charts</a><nav><a href="../en/index.html">Home</a><a href="../en/index.html#chapters">Chapters</a><a href="../en/data.html">Data</a><a href="../en/method.html" class="on">Method</a></nav>
 <div class="right"><a class="hub" href="https://bowonkwon.github.io/en/">All public materials</a><button id="theme" class="theme" type="button" aria-label="Theme">◑</button><a class="lang" href="../ko/method.html">한국어</a></div></header>
-<main><h1>Method</h1><blockquote class="sum"><p>What is here: how sources are graded, how the No. 1 lists were checked against sources of the time, genre classes and naming, what the site leaves out, and what is not yet done.</p></blockquote><div class="prose"><h2>Source grades</h2>
+<main><h1>Method</h1><blockquote class="sum"><p>What is here: how sources are graded, how the No. 1 lists were checked against sources of the time, genre classes and naming, what the site leaves out, and what is not yet done.</p></blockquote><div class="prose"><nav class="toc" id="toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#source-grades">Source grades</a></li><li><a href="#no1-checks">Checking the No. 1 lists</a></li><li><a href="#genre-classes">Genre classes</a></li><li><a href="#names">Titles and names</a></li><li><a href="#rights-scope">Rights and scope</a></li><li><a href="#not-yet-done">Not yet done</a></li></ul></nav><h2 id="source-grades">Source grades<a class="hx" href="#source-grades" aria-label="Link to the section ‘Source grades’">#</a></h2>
 <div class="wrap"><table>
 <thead>
 <tr>
@@ -80,17 +99,17 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 </tbody>
 </table></div>
 <p>Secondary sources are used for checking only, never cited as evidence. In the figures, spans confirmed only by secondary sources are hatched.</p>
-<h2>Checking the No. 1 lists</h2>
+<h2 id="no1-checks">Checking the No. 1 lists<a class="hx" href="#no1-checks" aria-label="Link to the section ‘Checking the No. 1 lists’">#</a></h2>
 <ul>
 <li><strong>MIAK monthly No. 1 Korean album (Aug 1998–Sep 2008).</strong> The No. 1 was copied from a copy of the table for all 122 months and checked against the Wikipedia list for the same month.</li>
 <li><strong>KBS <em>Gayo Top 10</em> weekly No. 1 (1981–1998).</strong> The 889-row Wikipedia list is the frame. The weeks to check were fixed before looking at the data: the first broadcast of each month, or the second if the first was skipped. Any year with a mismatch was to be checked in full. Newspapers of the time were read through public search results (opening lines) of the Dong-A Ilbo digital archive. So far 18 of the 203 sample weeks have been checked. The 889 rows of the list cover 888 broadcast dates (one tie on 25 Dec 1991).</li>
 <li>Each row is marked matched, mismatched, or undetermined. A row is undetermined when it cannot be settled which broadcast an article refers to. Undetermined rows are left out of the match-rate denominator.</li>
 </ul>
-<h2>Genre classes</h2>
+<h2 id="genre-classes">Genre classes<a class="hx" href="#genre-classes" aria-label="Link to the section ‘Genre classes’">#</a></h2>
 <p>Each No. 1 album's genre is recorded twice: the label printed on the table at the time, and a later class. A class is assigned only when the printed label maps directly to an entry in the genre dictionary (ballad, dance, rap/hip hop, R&amp;B/soul, rock/band, and so on). Months labeled only <em>gayo</em> (Korean pop) or <em>Local</em>, or given two genres, are left unclassified. No song gets two genres.</p>
-<h2>Titles and names</h2>
+<h2 id="names">Titles and names<a class="hx" href="#names" aria-label="Link to the section ‘Titles and names’">#</a></h2>
 <p>Korean pages use original Korean titles and names. English pages use the official English form where one exists; otherwise the Revised Romanization of Korean, followed by the Korean original in parentheses.</p>
-<h2>Rights and scope</h2>
+<h2 id="rights-scope">Rights and scope<a class="hx" href="#rights-scope" aria-label="Link to the section ‘Rights and scope’">#</a></h2>
 <ul>
 <li>Only facts such as titles, artists, ranks, dates, and sales are used. No lyrics, audio, album covers, broadcast images, or newspaper page images.</li>
 <li>The MIAK tables carry the line "This material may not be processed or edited without consulting the association." This site does not reproduce the ranking tables. For each month it gives only the No. 1 album and artist and that month's sales, with the address of the copy.</li>
@@ -98,12 +117,12 @@ footer{border-top:1px solid var(--line);color:var(--fg3);font-size:.82rem;paddin
 <li>No automated collection program was run against any site. Sources were opened and copied by hand.</li>
 <li>The site does not discuss allegations of chart manipulation against any singer or agency, and builds no measure comparing singers' popularity.</li>
 </ul>
-<h2>Not yet done</h2>
+<h2 id="not-yet-done">Not yet done<a class="hx" href="#not-yet-done" aria-label="Link to the section ‘Not yet done’">#</a></h2>
 <ul>
 <li>Checking the remaining 185 <em>Gayo Top 10</em> sample weeks and all of 1991, where undetermined rows cluster.</li>
 <li>The contents and running period of the 1972 DBS weekly top 10.</li>
 <li>Yearly gramophone release counts, pending the terms of use of the catalog data.</li>
 <li>Comparing broadcast-chart and sales No. 1s in the same month.</li>
-</ul></div></main>
-<footer>Korean Music Charts · Version 0.1.4 · built 2026-11-16 · <a href="https://github.com/BowonKwon/Korean-Music-Charts">GitHub</a> · Other sites <a href="https://bowonkwon.github.io/en/">bowonkwon.github.io</a></footer>
-<script>(function(){var k="kmc-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();</script></body></html>
+</ul><a class="totoc" href="#toc" aria-label="Back to the section list of this page">↑ Contents</a></div></main>
+<footer>Korean Music Charts · Version 0.1.5 · built 2026-11-18 · <a href="https://github.com/BowonKwon/Korean-Music-Charts">GitHub</a> · Other sites <a href="https://bowonkwon.github.io/en/">bowonkwon.github.io</a></footer>
+<script>(function(){var k="kmc-theme",r=document.documentElement,b=document.getElementById("theme");function ap(v){if(v)r.setAttribute("data-theme",v);else r.removeAttribute("data-theme");if(b)b.textContent=v==="dark"?"\u263E":v==="light"?"\u2600":"\u25D1"}var cur=localStorage.getItem(k)||"";ap(cur);if(b)b.addEventListener("click",function(){cur=cur===""?"light":cur==="light"?"dark":"";if(cur)localStorage.setItem(k,cur);else localStorage.removeItem(k);ap(cur)})})();(function(){var d=document,r=d.documentElement,h=d.querySelector("header"),SF=900,m=SF&&window.matchMedia?matchMedia("(min-width:"+SF+"px)"):null;r.classList.add("navjs");function gap(){var on=h&&m&&m.matches&&window.CSS&&CSS.supports&&CSS.supports("overflow-x","clip");r.style.setProperty("--hh",on?(h.offsetHeight+12)+"px":".9rem")}gap();addEventListener("resize",gap);addEventListener("load",gap);var c=d.querySelector("nav.toc"),p=d.querySelector(".totoc");function pill(){p.classList.toggle("show",c.getBoundingClientRect().bottom<0)}if(c&&p){addEventListener("scroll",pill,{passive:true});addEventListener("resize",pill);pill()}var ls=d.querySelectorAll("header a.lang,header .lang a");for(var i=0;i<ls.length;i++)(function(l){l.addEventListener("click",function(){if(location.hash&&(l.getAttribute("href")||"").indexOf("http")!==0)l.href=l.href.split("#")[0]+location.hash})})(ls[i])})();</script></body></html>
