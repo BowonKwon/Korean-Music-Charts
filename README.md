@@ -35,6 +35,7 @@ No lyrics, audio, album covers, broadcast images, or newspaper page images are p
 
 | 판 · Version | 날짜 · Date | 바뀐 것 · Changes |
 |---|---|---|
+| 0.1.6 | 2026-11-19 | 화면만 고침. 헤더가 화면 위에 붙지 않는 폭(900px 아래)에서 아래로 내려가도 언어를 바꿀 수 있게 오른쪽 아래에 언어 전환 단추를 띄움. 값 변화 없음 · Display only. At widths where the header does not stay on screen (below 900px) a language switch now floats at the bottom right, so the language can be changed further down the page. No values changed. |
 | 0.1.5 | 2026-11-18 | 목차에서 장·절로 바로 가기(장 목록, 면 안 절 목록, 절 제목 바로가기, 처음 면의 전체 목차), 넓은 화면에서 위쪽 메뉴 고정. 본문·수치 변화 없음 · Straight from the contents to a chapter or section (chapter list, section list on each page, links on section headings, full contents on the home page); the top menu stays on wide screens. No text or numerical value changed |
 | 0.1.4 | 2026-11-16 | 그래프 설명 보강(축 이름과 단위, 띠 그림의 두 줄 묶음 이름, 자료에서 계산한 읽는 법, 「가요톱10」 1위 연속 막대 두 묶음을 같은 눈금으로, 시상식 줄 이름에 KBS 구간 표시), 좁은 화면에서 그림 옆으로 넘기기, 공개 자료 허브 링크. 자료 값 변화 없음 · Chart explanations (axis names and units, the two row groups named on the band chart, readings computed from the data, both No. 1-run panels on one scale, award row renamed to show the KBS segment), sideways scrolling on narrow screens, hub link. No data value changed |
 | 0.1.3 | 2026-11-06 | 동아방송 「이주일의 10대가요」 1972년 10월 28일 순위표 판독(1위와 지난주 1위)을 2장과 자료에 반영 · DBS weekly top 10 of 28 October 1972 read (No. 1 and the previous week's No. 1), added to Chapter 2 and the data |
