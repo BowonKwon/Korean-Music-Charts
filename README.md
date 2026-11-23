@@ -16,12 +16,17 @@ A history site that traces, on one timeline from the first gramophone recordings
 | 3. 주간 순위 프로그램 · Weekly chart shows | 1981–1998 |
 | 4. 판매 집계의 시대와 공백 · Sales tallies and gaps | 1998–2010 |
 | 5. 공인 차트와 플랫폼 · Official charts and platforms | 2010– |
+| 6. 세대라는 이름 — 아이돌 세대 구분 · Naming the generations: how K-pop idol cohorts are divided | 1996– |
 
 ## 데이터 · Data
 
 `data/` 의 CSV(UTF-8)는 곡명·가수명·순위·날짜·판매량 같은 사실만 담습니다. 행마다 1차 출처와 대조 상태를 적었습니다. 「가요톱10」 표는 백과사전 목록을 뼈대로 삼았고, 당대 신문으로 확인한 행에만 1차 출처가 있습니다.
 
 The CSV files in `data/` (UTF-8) hold only facts such as titles, artists, ranks, dates, and sales, with a primary source and check status for each row. The *Gayo Top 10* table is framed on an encyclopedia list; only rows checked against newspapers of the time carry a primary source.
+
+6장의 파일(`gen_*.csv`)은 세대 구분을 다룬 출처 46개의 대조표와 그 계산 결과입니다. 대조표에는 출처마다 서지, 세대의 시작과 끝(원문 표기), 대조 근거로 삼은 짧은 인용문과 쪽, 계산에 들어갔는지가 있습니다.
+
+The Chapter 6 files (`gen_*.csv`) hold the comparison table of 46 sources on generation divisions and the results computed from it. For each source the table gives the citation, generation starts and ends as written, a short quotation with its page used for checking, and whether the row enters the calculation.
 
 ## 하지 않는 것 · Scope
 
@@ -35,6 +40,7 @@ No lyrics, audio, album covers, broadcast images, or newspaper page images are p
 
 | 판 · Version | 날짜 · Date | 바뀐 것 · Changes |
 |---|---|---|
+| 0.2.0 | 2026-11-23 | 6장 「세대라는 이름 — 아이돌 세대 구분」을 더함: 세대를 가리키는 말이 기사에 쓰인 때, 출처 46개가 경계를 두는 자리, 출처 3분의 2 이상이 모이는 구간, 그 구간과 시장 숫자·순위 체계의 겹침. 그림 4개, 데이터 파일 5개. 0~5장의 본문·수치 변화 없음 · Chapter 6 added, "Naming the generations: how K-pop idol cohorts are divided": when generation terms appeared in news articles, where 46 sources place the boundaries, the spans on which at least two thirds agree, and how those spans line up with market series and chart systems. Four figures and five data files. No text or number changed in Chapters 0–5 |
 | 0.1.6 | 2026-11-19 | 화면만 고침. 헤더가 화면 위에 붙지 않는 폭(900px 아래)에서 아래로 내려가도 언어를 바꿀 수 있게 오른쪽 아래에 언어 전환 단추를 띄움. 값 변화 없음 · Display only. At widths where the header does not stay on screen (below 900px) a language switch now floats at the bottom right, so the language can be changed further down the page. No values changed. |
 | 0.1.5 | 2026-11-18 | 목차에서 장·절로 바로 가기(장 목록, 면 안 절 목록, 절 제목 바로가기, 처음 면의 전체 목차), 넓은 화면에서 위쪽 메뉴 고정. 본문·수치 변화 없음 · Straight from the contents to a chapter or section (chapter list, section list on each page, links on section headings, full contents on the home page); the top menu stays on wide screens. No text or numerical value changed |
 | 0.1.4 | 2026-11-16 | 그래프 설명 보강(축 이름과 단위, 띠 그림의 두 줄 묶음 이름, 자료에서 계산한 읽는 법, 「가요톱10」 1위 연속 막대 두 묶음을 같은 눈금으로, 시상식 줄 이름에 KBS 구간 표시), 좁은 화면에서 그림 옆으로 넘기기, 공개 자료 허브 링크. 자료 값 변화 없음 · Chart explanations (axis names and units, the two row groups named on the band chart, readings computed from the data, both No. 1-run panels on one scale, award row renamed to show the KBS segment), sideways scrolling on narrow screens, hub link. No data value changed |
